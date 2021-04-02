@@ -1,0 +1,28 @@
+.grid{
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s linear 1s;
+
+    &.imagenes-cargadas{
+        opacity: 1;
+    }
+
+    .item{
+        position: absolute;
+        display: block;
+        padding: 0;
+        margin: 10px;
+        width: calc(33.33% - 20px);
+
+        .item-contenido{
+            position: relative;
+        }
+
+        img{
+            width: 100%;
+            cursor: pointer;
+            vertical-align: top;
+        }
+    }
+}
